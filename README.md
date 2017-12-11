@@ -1,6 +1,6 @@
 # Fasthat for iOS
 
-FastChat for iOS is a real time chat app based on Firebase developed by Derek Lee and written in Swift 3.
+FastChat for iOS is a real time chat app based on Firebase developed by Maximiliano Ungredda and written in Swift 3.
 
 FastChat allows to send and receive text messages, photos & location.
 
