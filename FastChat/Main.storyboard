@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="YU4-6K-4QF">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="YU4-6K-4QF">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
@@ -20,26 +24,15 @@
         <!--Landing View Controller-->
         <scene sceneID="0jb-GF-tm4">
             <objects>
-                <viewController id="YU4-6K-4QF" customClass="LandingViewController" customModule="QuickChat" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="YU4-6K-4QF" customClass="LandingViewController" customModule="FastChat" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="v5z-Ax-iCt"/>
                         <viewControllerLayoutGuide type="bottom" id="vDP-0g-5uJ"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="hBL-Vi-Mf5">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launch" translatesAutoresizingMaskIntoConstraints="NO" id="3bj-bK-kkR">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="3bj-bK-kkR" firstAttribute="top" secondItem="hBL-Vi-Mf5" secondAttribute="top" id="Y3s-pK-2Ka"/>
-                            <constraint firstItem="vDP-0g-5uJ" firstAttribute="top" secondItem="3bj-bK-kkR" secondAttribute="bottom" id="pUw-0R-nGK"/>
-                            <constraint firstItem="3bj-bK-kkR" firstAttribute="leading" secondItem="hBL-Vi-Mf5" secondAttribute="leading" id="w9n-A6-vTA"/>
-                            <constraint firstAttribute="trailing" secondItem="3bj-bK-kkR" secondAttribute="trailing" id="xDa-VD-Ul1"/>
-                        </constraints>
+                        <color key="backgroundColor" red="0.40493151545524597" green="0.39528879523277283" blue="0.72538292407989502" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ds1-sN-QMJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -49,26 +42,26 @@
         <!--Welcome View Controller-->
         <scene sceneID="Gs1-m1-RGK">
             <objects>
-                <viewController storyboardIdentifier="Welcome" useStoryboardIdentifierAsRestorationIdentifier="YES" id="rVC-Ig-Azx" customClass="WelcomeViewController" customModule="QuickChat" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Welcome" useStoryboardIdentifierAsRestorationIdentifier="YES" id="rVC-Ig-Azx" customClass="WelcomeViewController" customModule="FastChat" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="fbL-YA-EsA"/>
                         <viewControllerLayoutGuide type="bottom" id="Ong-Qv-GEy"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="oxM-sB-nYg">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="pW2-zY-MgK">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clouds" translatesAutoresizingMaskIntoConstraints="NO" id="ddG-br-Cig">
-                                <rect key="frame" x="0.0" y="510" width="750" height="90"/>
+                                <rect key="frame" x="0.0" y="567" width="750" height="100"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" image="YES" notEnabled="YES"/>
                                 </accessibility>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aSu-34-603">
-                                <rect key="frame" x="210" y="560" width="180" height="30"/>
+                                <rect key="frame" x="97.5" y="627" width="180" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="180" id="4pM-xv-nry"/>
                                     <constraint firstAttribute="height" constant="30" id="hQO-Bn-Ccf"/>
@@ -82,10 +75,10 @@
                                 </connections>
                             </button>
                             <view hidden="YES" alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mgg-MM-NR7">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
                                     <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="b3E-sR-X8y">
-                                        <rect key="frame" x="290" y="290" width="20" height="20"/>
+                                        <rect key="frame" x="177.5" y="323.5" width="20" height="20"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="20" id="S2t-Nb-k3P"/>
                                             <constraint firstAttribute="width" constant="20" id="ghP-ck-Inx"/>
@@ -131,11 +124,11 @@
                         <outlet property="spinner" destination="b3E-sR-X8y" id="G2n-1r-jdg"/>
                         <outletCollection property="waringLabels" destination="aBA-he-i3z" collectionClass="NSMutableArray" id="1Dt-un-JpK"/>
                         <outletCollection property="waringLabels" destination="O5g-Mk-Irl" collectionClass="NSMutableArray" id="bVM-Mf-GdQ"/>
-                        <outletCollection property="inputFields" destination="ysO-kC-tfW" id="Eqq-cj-Od8"/>
-                        <outletCollection property="inputFields" destination="HqN-BY-obZ" id="sKF-h0-9ak"/>
-                        <outletCollection property="inputFields" destination="MbO-OW-uK3" id="Kdy-2c-E3Y"/>
-                        <outletCollection property="inputFields" destination="Ecv-9h-ZWB" id="0WE-ZX-Wyh"/>
-                        <outletCollection property="inputFields" destination="12N-yZ-eQF" id="8YP-mT-7qC"/>
+                        <outletCollection property="inputFields" destination="ysO-kC-tfW" collectionClass="NSMutableArray" id="Eqq-cj-Od8"/>
+                        <outletCollection property="inputFields" destination="HqN-BY-obZ" collectionClass="NSMutableArray" id="sKF-h0-9ak"/>
+                        <outletCollection property="inputFields" destination="MbO-OW-uK3" collectionClass="NSMutableArray" id="Kdy-2c-E3Y"/>
+                        <outletCollection property="inputFields" destination="Ecv-9h-ZWB" collectionClass="NSMutableArray" id="0WE-ZX-Wyh"/>
+                        <outletCollection property="inputFields" destination="12N-yZ-eQF" collectionClass="NSMutableArray" id="8YP-mT-7qC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ub0-iA-SeX" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -149,14 +142,14 @@
                                 <action selector="selectPic:" destination="rVC-Ig-Azx" eventType="touchUpInside" id="ydR-Z4-Cxn"/>
                             </connections>
                         </button>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile pic" translatesAutoresizingMaskIntoConstraints="NO" id="tKd-8y-Ynh" customClass="RoundedImageView" customModule="QuickChat" customModuleProvider="target">
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile pic" translatesAutoresizingMaskIntoConstraints="NO" id="tKd-8y-Ynh" customClass="RoundedImageView" customModule="FastChat" customModuleProvider="target">
                             <rect key="frame" x="130" y="12" width="70" height="70"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="70" id="SGD-cc-LqK"/>
                                 <constraint firstAttribute="width" secondItem="tKd-8y-Ynh" secondAttribute="height" multiplier="1:1" id="x63-CX-YaS"/>
                             </constraints>
                         </imageView>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="crQ-hm-DCf" customClass="RoundedButton" customModule="QuickChat" customModuleProvider="target">
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="crQ-hm-DCf" customClass="RoundedButton" customModule="FastChat" customModuleProvider="target">
                             <rect key="frame" x="90" y="384" width="150" height="40"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="40" id="N7K-lu-CeM"/>
@@ -331,7 +324,7 @@
                     <rect key="frame" x="0.0" y="0.0" width="452" height="459"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <subviews>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A2p-26-VTZ" customClass="RoundedButton" customModule="QuickChat" customModuleProvider="target">
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A2p-26-VTZ" customClass="RoundedButton" customModule="FastChat" customModuleProvider="target">
                             <rect key="frame" x="166" y="389" width="120" height="40"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="40" id="9oD-xa-fwu"/>
@@ -461,27 +454,27 @@
         <!-- -->
         <scene sceneID="sN9-4N-rjq">
             <objects>
-                <viewController storyboardIdentifier="Conversations" title=" " useStoryboardIdentifierAsRestorationIdentifier="YES" id="UoK-02-tpp" customClass="ConversationsViewController" customModule="QuickChat" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Conversations" title=" " useStoryboardIdentifierAsRestorationIdentifier="YES" id="UoK-02-tpp" customClass="ConversationsViewController" customModule="FastChat" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="VcU-Ui-DNC"/>
                         <viewControllerLayoutGuide type="bottom" id="n9w-Gn-0xV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="qPh-Fp-RNk">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="80" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Plb-lE-iQb">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" id="xjX-CL-WpE" customClass="ConversationsTBCell" customModule="QuickChat" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="600" height="80"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" id="xjX-CL-WpE" customClass="ConversationsTBCell" customModule="FastChat" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="xjX-CL-WpE" id="4hB-2f-4v2">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="80"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile pic" translatesAutoresizingMaskIntoConstraints="NO" id="wvs-3O-oXq" customClass="RoundedImageView" customModule="QuickChat" customModuleProvider="target">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile pic" translatesAutoresizingMaskIntoConstraints="NO" id="wvs-3O-oXq" customClass="RoundedImageView" customModule="FastChat" customModuleProvider="target">
                                                     <rect key="frame" x="10" y="15" width="50" height="50"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="50" id="3J7-bl-iGG"/>
@@ -501,7 +494,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last Message" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="had-mQ-hEJ">
-                                                    <rect key="frame" x="80" y="45" width="510" height="20"/>
+                                                    <rect key="frame" x="80" y="45" width="503" height="20"/>
                                                     <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="14"/>
                                                     <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -528,10 +521,10 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Empty Cell" id="QgS-rc-0dp">
-                                        <rect key="frame" x="0.0" y="108" width="600" height="80"/>
+                                        <rect key="frame" x="0.0" y="108" width="375" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="QgS-rc-0dp" id="JnP-IB-JdY">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="80"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="empty" translatesAutoresizingMaskIntoConstraints="NO" id="yGb-ft-A2K">
@@ -558,10 +551,10 @@
                                 </connections>
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="44O-uk-hGn">
-                                <rect key="frame" x="0.0" y="610" width="600" height="30"/>
+                                <rect key="frame" x="0.0" y="677" width="375" height="30"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please verify your email address" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sCr-ft-cS2">
-                                        <rect key="frame" x="0.0" y="0.0" width="600" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="30"/>
                                         <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="14"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -604,20 +597,20 @@
         <!--Chat-->
         <scene sceneID="j8s-t8-l2W">
             <objects>
-                <viewController storyboardIdentifier="Chat" title="Chat" useStoryboardIdentifierAsRestorationIdentifier="YES" id="j4r-Rx-g1K" customClass="ChatViewController" customModule="QuickChat" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Chat" title="Chat" useStoryboardIdentifierAsRestorationIdentifier="YES" id="j4r-Rx-g1K" customClass="ChatViewController" customModule="FastChat" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="RRG-Ne-wJW"/>
                         <viewControllerLayoutGuide type="bottom" id="noO-df-r8p"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Hp0-e2-dDk">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="interactive" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="30" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0I1-tm-nYA">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Sender" id="af0-zT-Yi5" customClass="SenderCell" customModule="QuickChat" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Sender" id="af0-zT-Yi5" customClass="SenderCell" customModule="FastChat" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="30"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="af0-zT-Yi5" id="bCB-qc-OOc">
@@ -642,7 +635,7 @@
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                     <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES"/>
                                                 </textView>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="f5G-7e-2oY" customClass="RoundedImageView" customModule="QuickChat" customModuleProvider="target">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="f5G-7e-2oY" customClass="RoundedImageView" customModule="FastChat" customModuleProvider="target">
                                                     <rect key="frame" x="10" y="-12" width="36" height="36"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="36" id="Np9-WA-NBT"/>
@@ -668,7 +661,7 @@
                                             <outlet property="profilePic" destination="f5G-7e-2oY" id="KHS-Fm-Tak"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Receiver" id="BCb-Hs-Pv6" customClass="ReceiverCell" customModule="QuickChat" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Receiver" id="BCb-Hs-Pv6" customClass="ReceiverCell" customModule="FastChat" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="58" width="375" height="30"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="BCb-Hs-Pv6" id="aDi-CM-Ngu">
@@ -676,14 +669,14 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="I3C-dc-yVH">
-                                                    <rect key="frame" x="340" y="6" width="20" height="18"/>
+                                                    <rect key="frame" x="565" y="6" width="20" height="18"/>
                                                     <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" relation="lessThanOrEqual" constant="300" id="4pZ-Sf-nNE"/>
                                                     </constraints>
                                                 </imageView>
                                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ybz-Uk-Vj5">
-                                                    <rect key="frame" x="345" y="6" width="10" height="18"/>
+                                                    <rect key="frame" x="570" y="6" width="10" height="18"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" relation="lessThanOrEqual" constant="250" id="0sf-xG-LAZ"/>
                                                         <constraint firstAttribute="height" relation="lessThanOrEqual" constant="300" id="DbC-nF-9YN"/>
@@ -876,10 +869,10 @@
         <!--Nav View Controller-->
         <scene sceneID="bKx-7C-iuV">
             <objects>
-                <navigationController storyboardIdentifier="Navigation" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ZJi-hT-Uhs" customClass="NavViewController" customModule="QuickChat" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="Navigation" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ZJi-hT-Uhs" customClass="NavViewController" customModule="FastChat" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="0JK-Dc-Tsr">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -913,7 +906,7 @@
                                 <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                             </collectionViewFlowLayout>
                             <cells>
-                                <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="us7-Oh-k7B" customClass="ContactsCVCell" customModule="QuickChat" customModuleProvider="target">
+                                <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="us7-Oh-k7B" customClass="ContactsCVCell" customModule="FastChat" customModuleProvider="target">
                                     <rect key="frame" x="0.0" y="17.5" width="120" height="123"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -921,13 +914,13 @@
                                         <autoresizingMask key="autoresizingMask"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8BA-gT-0wN">
-                                                <rect key="frame" x="12" y="116" width="96" height="21"/>
+                                                <rect key="frame" x="12" y="124" width="96" height="21"/>
                                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile pic" translatesAutoresizingMaskIntoConstraints="NO" id="VrV-Lt-O4h" customClass="RoundedImageView" customModule="QuickChat" customModuleProvider="target">
-                                                <rect key="frame" x="12" y="10" width="96" height="96"/>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile pic" translatesAutoresizingMaskIntoConstraints="NO" id="VrV-Lt-O4h" customClass="RoundedImageView" customModule="FastChat" customModuleProvider="target">
+                                                <rect key="frame" x="12" y="18" width="96" height="96"/>
                                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="VrV-Lt-O4h" secondAttribute="height" multiplier="1:1" id="EEt-lY-cCj"/>
@@ -950,7 +943,7 @@
                                         <outlet property="profilePic" destination="VrV-Lt-O4h" id="gUD-8S-wjj"/>
                                     </connections>
                                 </collectionViewCell>
-                                <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Empty Cell" id="Ar2-RX-Q98" customClass="ContactsCVCell" customModule="QuickChat" customModuleProvider="target">
+                                <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Empty Cell" id="Ar2-RX-Q98" customClass="ContactsCVCell" customModule="FastChat" customModuleProvider="target">
                                     <rect key="frame" x="130" y="0.0" width="164" height="158"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -979,7 +972,7 @@
                                 <outlet property="delegate" destination="ZJi-hT-Uhs" id="LjT-br-yUx"/>
                             </connections>
                         </collectionView>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iHT-JN-LLz" customClass="RoundedButton" customModule="QuickChat" customModuleProvider="target">
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iHT-JN-LLz" customClass="RoundedButton" customModule="FastChat" customModuleProvider="target">
                             <rect key="frame" x="133" y="262" width="120" height="40"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="40" id="ixR-tJ-izi"/>
@@ -1008,7 +1001,7 @@
                     <rect key="frame" x="0.0" y="0.0" width="375" height="397"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <subviews>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IWJ-sy-fGZ" customClass="RoundedImageView" customModule="QuickChat" customModuleProvider="target">
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IWJ-sy-fGZ" customClass="RoundedImageView" customModule="FastChat" customModuleProvider="target">
                             <rect key="frame" x="93" y="41" width="190" height="190"/>
                             <constraints>
                                 <constraint firstAttribute="width" secondItem="IWJ-sy-fGZ" secondAttribute="height" multiplier="1:1" id="Wvf-ab-MCt"/>
@@ -1032,7 +1025,7 @@
                             <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GFR-4x-VuX" customClass="RoundedButton" customModule="QuickChat" customModuleProvider="target">
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GFR-4x-VuX" customClass="RoundedButton" customModule="FastChat" customModuleProvider="target">
                             <rect key="frame" x="128" y="337" width="120" height="40"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="40" id="PiE-N3-QEA"/>
@@ -1168,7 +1161,6 @@
         <image name="clouds" width="750" height="110"/>
         <image name="email" width="24" height="24"/>
         <image name="empty" width="375" height="602"/>
-        <image name="launch" width="375" height="667"/>
         <image name="more" width="32" height="25"/>
         <image name="name" width="24" height="24"/>
         <image name="password" width="24" height="24"/>
