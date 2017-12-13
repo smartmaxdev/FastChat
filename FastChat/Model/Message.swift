@@ -5,7 +5,7 @@
 import Foundation
 import UIKit
 import Firebase
-
+import Kingfisher
 class Message {
     
     //MARK: Properties
@@ -51,19 +51,6 @@ class Message {
                     })
                 }
             })
-        }
-    }
-    
-    func downloadImage(indexpathRow: Int, completion: @escaping (Bool, Int) -> Swift.Void)  {
-        if self.type == .photo {
-            let imageLink = self.content as! String
-            let imageURL = URL.init(string: imageLink)
-            URLSession.shared.dataTask(with: imageURL!, completionHandler: { (data, response, error) in
-                if error == nil {
-                    self.image = UIImage.init(data: data!)
-                    completion(true, indexpathRow)
-                }
-            }).resume()
         }
     }
     

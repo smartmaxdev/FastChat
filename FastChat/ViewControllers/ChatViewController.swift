@@ -6,6 +6,7 @@ import UIKit
 import Photos
 import Firebase
 import CoreLocation
+import Kingfisher
 
 class ChatViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UITextFieldDelegate,  UINavigationControllerDelegate, UIImagePickerControllerDelegate, CLLocationManagerDelegate {
     
@@ -188,13 +189,14 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
                     cell.messageBackground.image = image
                     cell.message.isHidden = true
                 } else {
-                    cell.messageBackground.image = UIImage.init(named: "loading")
-                    self.items[indexPath.row].downloadImage(indexpathRow: indexPath.row, completion: { (state, index) in
-                        if state == true {
-                            DispatchQueue.main.async {
-                                self.tableView.reloadData()
-                            }
-                        }
+                    let imageLink = self.items[indexPath.row].content as! String
+                    let imageURL = URL.init(string: imageLink)
+                    cell.messageBackground.kf.setImage(with: imageURL, placeholder:  UIImage.init(named: "loading"), options: nil
+                        , progressBlock: { receivedSize, totalSize in
+                            print("\(indexPath.row + 1): \(receivedSize)/\(totalSize)")
+                    }
+                        , completionHandler: { image, error, cacheType, imageURL in
+                            self.items[indexPath.row].image = image
                     })
                 }
             case .location:
@@ -214,14 +216,16 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
                     cell.messageBackground.image = image
                     cell.message.isHidden = true
                 } else {
-                    cell.messageBackground.image = UIImage.init(named: "loading")
-                    self.items[indexPath.row].downloadImage(indexpathRow: indexPath.row, completion: { (state, index) in
-                        if state == true {
-                            DispatchQueue.main.async {
-                                self.tableView.reloadData()
-                            }
+                    let imageLink = self.items[indexPath.row].content as! String
+                    let imageURL = URL.init(string: imageLink)
+                    cell.messageBackground.kf.setImage(with: imageURL, placeholder:  UIImage.init(named: "loading"), options: nil
+                        , progressBlock: { receivedSize, totalSize in
+                            print("\(indexPath.row + 1): \(receivedSize)/\(totalSize)")
                         }
+                        , completionHandler: { image, error, cacheType, imageURL in
+                            self.items[indexPath.row].image = image
                     })
+                    
                 }
             case .location:
                 cell.messageBackground.image = UIImage.init(named: "location")
