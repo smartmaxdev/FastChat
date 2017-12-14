@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		843E19651FE2ED0500564F03 /* FCActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843E19641FE2ED0500564F03 /* FCActivityIndicator.swift */; };
 		8474A3CD1FE04DF000743DC4 /* Launch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8474A3CC1FE04DF000743DC4 /* Launch.storyboard */; };
 		B577E126688A613E4B2249AA /* Pods_FastChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB2674F927B8144977FE1F89 /* Pods_FastChat.framework */; };
 		E12CEB181F204D3800D12F4D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12CEB061F204D3800D12F4D /* AppDelegate.swift */; };
@@ -30,6 +31,7 @@
 
 /* Begin PBXFileReference section */
 		226EFFA01E1BBBCA00B1D185 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		843E19641FE2ED0500564F03 /* FCActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FCActivityIndicator.swift; sourceTree = "<group>"; };
 		8474A3CC1FE04DF000743DC4 /* Launch.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Launch.storyboard; sourceTree = "<group>"; };
 		B6F027A2E44657B9F3BAB221 /* Pods-FastChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FastChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-FastChat/Pods-FastChat.release.xcconfig"; sourceTree = "<group>"; };
 		E12CEAD71F204AAC00D12F4D /* FastChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FastChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -94,6 +96,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		843E19631FE2ECDF00564F03 /* Control */ = {
+			isa = PBXGroup;
+			children = (
+				843E19641FE2ED0500564F03 /* FCActivityIndicator.swift */,
+			);
+			path = Control;
+			sourceTree = "<group>";
+		};
 		ADD6E8E924E29AFE4DBB9FB3 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -115,6 +125,7 @@
 				8474A3CC1FE04DF000743DC4 /* Launch.storyboard */,
 				E12CEB0C1F204D3800D12F4D /* Model */,
 				E12CEB101F204D3800D12F4D /* newMessage.wav */,
+				843E19631FE2ECDF00564F03 /* Control */,
 				E12CEB111F204D3800D12F4D /* ViewControllers */,
 			);
 			path = FastChat;
@@ -238,6 +249,7 @@
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftSpinner/SwiftSpinner.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -245,6 +257,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftSpinner.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -299,6 +312,7 @@
 				E12CEB1D1F204D3800D12F4D /* Conversation.swift in Sources */,
 				E12CEB1E1F204D3800D12F4D /* Message.swift in Sources */,
 				E12CEB1A1F204D3800D12F4D /* Helper Files.swift in Sources */,
+				843E19651FE2ED0500564F03 /* FCActivityIndicator.swift in Sources */,
 				E12CEB1F1F204D3800D12F4D /* User.swift in Sources */,
 				E12CEB221F204D3800D12F4D /* ConversationsViewController.swift in Sources */,
 				E12CEB261F204D3800D12F4D /* WelcomeViewController.swift in Sources */,

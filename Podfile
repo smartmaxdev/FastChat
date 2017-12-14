@@ -12,4 +12,5 @@ pod 'Firebase/Auth'
 pod 'Firebase/Storage'
 pod 'Firebase/Core'
 pod 'Kingfisher', '~> 4.0'
+pod 'SwiftSpinner'
 end

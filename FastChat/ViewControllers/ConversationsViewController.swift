@@ -5,6 +5,7 @@
 import UIKit
 import Firebase
 import AudioToolbox
+import SwiftSpinner
 
 class ConversationsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
@@ -58,10 +59,12 @@ class ConversationsViewController: UIViewController, UITableViewDelegate, UITabl
     
     //Downloads conversations
     func fetchData() {
+        SwiftSpinner.show("Loading...")
         Conversation.showConversations { (conversations) in
             self.items = conversations
             self.items.sort{ $0.lastMessage.timestamp > $1.lastMessage.timestamp }
             DispatchQueue.main.async {
+                SwiftSpinner.hide()
                 self.tableView.reloadData()
                 for conversation in self.items {
                     if conversation.lastMessage.isRead == false {
